@@ -1,0 +1,119 @@
+{
+    "tracks": [
+        {
+            "type": "video",
+            "width": 1440,
+            "height": 1080,
+            "frameRate": 25.0,
+            "segments": [
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 57.0,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 59.28,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 79.28,
+                    "duration": 5.08
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 84.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 94.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 104.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 194.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 204.36,
+                    "duration": 4.08
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 208.44,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mov",
+                    "start": 218.44,
+                    "duration": 10.0
+                }
+            ]
+        },
+        {
+            "type": "audio",
+            "sampleRate": 48000,
+            "channels": 2,
+            "segments": [
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 57.0,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 59.28,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 79.28,
+                    "duration": 5.08
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 84.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 94.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 104.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 194.36,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 204.36,
+                    "duration": 4.08
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 208.44,
+                    "duration": 10.0
+                },
+                {
+                    "source": "N-PWRKINAEKSPERT07-021121-JUGUN-NK.mp3",
+                    "start": 218.44,
+                    "duration": 10.0
+                }
+            ]
+        }
+    ]
+}
