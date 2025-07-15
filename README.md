@@ -1,5 +1,5 @@
 ## Video Clipping and Summary Generation Framework
-This repository provides a comprehensive framework for clipping, extracting, and generating summarized video content along with edit decision lists (EDLs). It involves advanced deep learning models, including  variational autoencoders, multi-head attention mechanisms, and long short-term memory (LSTM) networks, integrated with robust feature extraction components. We extend the existing work by adding new components including  Bayesian Inference, transformers, and contrastive learning for enhanced clipping and maintaining spatial-temporal continuity across segments.
+This repository provides a framework for clipping and generating summarized video content along with edit decision lists (EDLs). It involves advanced deep learning models, including   variational autoencoders, multi-head attention mechanisms, and long short-term memory (LSTM) networks, integrated with robust feature extraction components. The framework  leverages advanced deep learning techniques including Bayesian based modeling, transformers, and contrastive learning for enhanced clipping and maintaining spatial-temporal continuity across segments.
 ## Table of Contents
 - [Requirements](#requirements)
 - [Dataset](#dataset)
@@ -14,10 +14,12 @@ pip install -r requirements.txt
  ```  
 
 ## Dataset
-The dataset used for training the models consists of a collection of news videos (commonly named as POWERs or raw footage) from the **TV2 News** collection. The files are preprocessed and structured in h5py format, containing video features, segmentations, and other relevant information. These files are stored in the `data` folder and include essential information for video clipping and summary generation.  
+**Newsroom dataset**:The dataset used for training the models consists of a collection of news videos (commonly named as POWERs or raw footage) from the TV2 news collection. The files are preprocessed and structured in h5py format, containing video features, segmentations, and other relevant information. These files are stored in the `data` folder and include essential information for video clipping and summary generation. 
+**Public Datasets**: TVSum and SumMe for direct comparison with stateof-the-art (SOTA) methods. TVSum dataset comprises 50 videos, each typically ranging from 1 to 5 minutes in
+duration. The dataset includes various genres, such as news and documentary. SumMe dataset consists of 25 videos, with durations ranging from 1 to 6 minutes. 
 
 ## How to Train
-This work is ongoing, and we train the model using a single split of the dataset. You can train the model by running the following command:
+ We train the model using 5 splits of the dataset. You can train the model by running the following command:
 
 ```bash
 python train.py  /path/to/dataset
@@ -49,9 +51,9 @@ python test.py --video_path /path/to/video --d_min 2 --d_sec 30 --start_time  50
 - --frames <int>:  Number frames (optional, default :0 )
 
 ## Acknowledgements
-The code implementation is based upon the following related repositories:
-- [Adversarial Video Summary](https://github.com/j-min/Adversarial_Video_Summary) by j-min, which serves as the  building block for this project.
-- [AC-SUM-GAN](https://github.com/e-apostolidis/AC-SUM-GAN) by e-apostolidis
+The codebase is based upon the following repositories:
+- [Adversarial Video Summary](https://github.com/j-min/Adversarial_Video_Summary).
+- [AC-SUM-GAN](https://github.com/e-apostolidis/AC-SUM-GAN)
 
 We casted our video clipping problem as extractive video summarization task on top of the existing methods, which have been extended and modified to include additional learning techniques such as Bayesian Variational Autoencoders, transformers, and contrastive learning for enhanced clipping and maintaining spatial-temporal continuity across shots.
 
