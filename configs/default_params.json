@@ -1,7 +1,7 @@
 {
     "mode": "train",
     "verbose": false,
-    "video_type": "custom_dataset",
+    "video_type": "TV2",
     "input_size": 1024,
     "hidden_size": 512,
     "num_layers": 2,
