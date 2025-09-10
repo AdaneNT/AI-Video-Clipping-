@@ -32,10 +32,7 @@ Generate a clip (a short version of the original footage) using the graphical us
 - **LYD (shortest)**: 00:10–00:39  
 - **KORTLOT (short)**: 00:40–01:14  
 - **LOT (medium)**: 01:15–02:29  
-- **LANGLOT (long)**: 02:30–04:45- **LYD (shortest clip)**: 10-40 seconds      
-- **KORTLOT (shorter)**: 40 seconds - 1 min 30 seconds
-- **LOT (Medium)**: 1 min 15 seconds - 2 min 45 seconds
-- **LANGLOT (Long version)**: 2 min 30 sek - 4 min 45 seconds
+- **LANGLOT (long)**: 02:30–04:45-
 
 ### Using Swagger UI:
 1. Launch the API by running the following command:
