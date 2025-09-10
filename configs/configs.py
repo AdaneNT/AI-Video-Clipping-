@@ -68,7 +68,7 @@ def get_config(parse=False, **optional_kwargs):
     parser.add_argument('--input_size', type=int, default=default_params['input_size'])
     parser.add_argument('--hidden_size', type=int, default=default_params['hidden_size'])
     parser.add_argument('--num_layers', type=int, default=default_params['num_layers'])
-    parser.add_argument('--summary_rate', type=float, default=0.3)
+    parser.add_argument('--summary_rate', type=float, default=0.15)
     parser.add_argument('--regularization_factor', type=float, default=default_params['regularization_factor'])
     parser.add_argument('--entropy_coef', type=float, default=default_params['entropy_coef'])
 
