@@ -1,6 +1,5 @@
 ## Automated News Clip Generation via Robust Video Summarization
-[![ICTAI 2025](https://img.shields.io/badge/ICTAI%202025-Accepted%20(to%20appear)-blue)](#paper)  
-**Accepted to appear at IEEE ICTAI 2025.** 
+**Accepted to appear at IEEE ICTAI 2025([https://easyconferences.eu/ictai2025/]))** 
 This repository provides a framework for clipping and generating summarized video content along with edit decision lists (EDLs). It involves advanced deep learning models, including Bayesian-based variational autoencoders, multi-head attention mechanisms, and contrastive learning methods, integrated with robust feature extraction components. The framework is designed to generate coherent, high-quality summaries while preserving spatial-temporal continuity across video segments.
 ## Table of Contents
 - [Requirements](#requirements)
