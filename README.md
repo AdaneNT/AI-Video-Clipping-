@@ -44,7 +44,7 @@ Generate a clip (a short version of the original footage) using the graphical us
 2. Open your web browser and navigate to the Swagger UI at http://localhost:8080/apidocs/ (or the address specified in the terminal).
 3. Use the Swagger UI interface to upload your video and set parameters to generate a clip.
    
-### Command-Line Usage:
+### Command-Line Usage: 
 Alternatively, you can generate a clip by running the following command in the terminal:
 ```bash
 python test.py --video_path /path/to/video --d_min 2 --d_sec 30 --start_time  50 --frames 0
@@ -52,29 +52,16 @@ python test.py --video_path /path/to/video --d_min 2 --d_sec 30 --start_time  50
 - --video_path <str>:  Path to the input video file.
 - --d_min <int>:  Desired clip duration in minutes.
 - --d_sec <int>: Desired clip duration in seconds.
-- --s_time <int>:  Start time in seconds (optional, default :50)
-- --frames <int>:  Number frames (optional, default :0 )
+- --s_time <int>:  Start time in seconds (optional, default:50)
+- --frames <int>:  Number of frames (optional, default: 0 )
 
 ## Acknowledgements
 The codebase is based upon the following repositories:
 - [Adversarial Video Summary](https://github.com/j-min/Adversarial_Video_Summary).
 - [AC-SUM-GAN](https://github.com/e-apostolidis/AC-SUM-GAN)
 
-We casted our video clipping problem as extractive video summarization task on top of the existing methods, which have been extended and modified to include additional learning techniques such as Bayesian Variational Autoencoders, transformers, and novel contrastive loss for enhanced clipping and maintaining spatial-temporal continuity across shots.
+We cast our video clipping problem as an extractive video summarization task on top of the existing methods, which have been extended and modified to include additional learning techniques such as Bayesian Variational Autoencoders, transformers, and novel contrastive loss for enhanced clipping and maintaining spatial-temporal continuity across shots.
 
-## Citation
-If you use this repository, please cite our ICTAI 2025 paper:
-
-```bibtex
-@inproceedings{YourKey2025,
-  title        = {Automated News Clip Generation via Robust Video Summarization},
-  author       = {Adane Tarekegn, Fazle Rabbi, Lubos Steskal and Bjørnar Tessem},
-  booktitle    = {IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
-  year         = {2025},
-  url          = {<paper or arXiv link>},
-  doi          = {<DOI if available>}
-}
-```
 ## References
 1. **Unsupervised Video Summarization with Adversarial LSTM Networks**  
    Behrooz Mahasseni, Michael Lam, and Sinisa Todorovic.  
