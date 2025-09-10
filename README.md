@@ -45,14 +45,14 @@ Generate a clip (a short version of the original footage) using the graphical us
 3. Use the Swagger UI interface to upload your video and set parameters to generate a clip.
    
 ### Command-Line Usage: 
-Alternatively, you can generate a clip by running the following command in the terminal:
+Alternatively, generate a clip by running the following command in the terminal:
 ```bash
 python test.py --video_path /path/to/video --d_min 2 --d_sec 30 --start_time  50 --frames 0
  ```
 - --video_path <str>:  Path to the input video file.
 - --d_min <int>:  Desired clip duration in minutes.
 - --d_sec <int>: Desired clip duration in seconds.
-- --s_time <int>:  Start time in seconds (optional, default:50)
+- --start_time <int>:  Start time in seconds (optional, default:50)
 - --frames <int>:  Number of frames (optional, default: 0 )
 
 ## Acknowledgements
