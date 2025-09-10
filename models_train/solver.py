@@ -230,7 +230,7 @@ class Solver(object):
 
                 d_loss_history.append(d_loss.data)
                 
-                # Initialize contrastive_loss_value to avoid UnboundLocalError 
+                # Initialize contrastive_loss_value 
                 contrastive_loss_value = torch.tensor(0.0).to(device)
 
                 #---- Train cLSTM ----#
