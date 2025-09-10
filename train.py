@@ -5,7 +5,7 @@ from configs.configs import get_config
 import os
 
 if __name__ == '__main__':
-    # Check if the path to the dataset is provided through the command-line
+    # Check the path 
     if len(sys.argv) > 1:
         use_custom_video = True  # 
         data_path = sys.argv[1].strip()  #
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         print(config)
         print(test_config)
 
-        # Initialize data loader for custom video dataset
+        # Initialize data loader 
         train_loader = get_loader_custom_video_data(config.mode, data_path)
         test_loader = get_loader_custom_video_data(test_config.mode, data_path)
 
