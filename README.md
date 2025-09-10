@@ -68,7 +68,7 @@ If you use this repository, please cite our ICTAI 2025 paper:
 ```bibtex
 @inproceedings{YourKey2025,
   title        = {Automated News Clip Generation via Robust Video Summarization},
-  author       = {<Your Name(s)>},
+  author       = {Adane Tarekegn, Fazle Rabbi, Lubos Steskal and Bjørnar Tessem},
   booktitle    = {IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
   year         = {2025},
   url          = {<paper or arXiv link>},
