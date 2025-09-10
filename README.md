@@ -27,7 +27,7 @@ duration. The dataset includes various genres, such as news and documentary. Sum
 python train.py  /path/to/dataset
  ```
 ## How to Test (Generate Clip)
-Generate a clip (a short version of the original footage) using the graphical user interface (GUI). The GUI lets you choose a clip type—`LYD`, `KORTLOT`, `LOT`, or `LANGLOT`—to determine the clip length. An Edit Decision List (EDL) can also be generated automatically for each selected clip type.
+Generate a clip (a short version of the original footage) using the graphical user interface (GUI). The GUI lets you choose a clip type: `LYD`, `KORTLOT`, `LOT`, or `LANGLOT`, to determine the clip length. An Edit Decision List (EDL) can also be generated automatically for each selected clip type.
 
 - **LYD (shortest)**: 00:10–00:39  
 - **KORTLOT (short)**: 00:40–01:14  
