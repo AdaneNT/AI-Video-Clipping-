@@ -63,12 +63,18 @@ The codebase is based upon the following repositories:
 We casted our video clipping problem as extractive video summarization task on top of the existing methods, which have been extended and modified to include additional learning techniques such as Bayesian Variational Autoencoders, transformers, and novel contrastive loss for enhanced clipping and maintaining spatial-temporal continuity across shots.
 
 ## Citation
+If you use this repository, please cite our ICTAI 2025 paper:
+
+```bibtex
 @inproceedings{YourKey2025,
-title = {Automated News Clip Generation via Robust Video Summarization},
-author = {<Your Name(s)>},
-booktitle = {IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
-year = {2025}
+  title        = {Automated News Clip Generation via Robust Video Summarization},
+  author       = {<Your Name(s)>},
+  booktitle    = {IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
+  year         = {2025},
+  url          = {<paper or arXiv link>},
+  doi          = {<DOI if available>}
 }
+
 ## References
 1. **Unsupervised Video Summarization with Adversarial LSTM Networks**  
    Behrooz Mahasseni, Michael Lam, and Sinisa Todorovic.  
