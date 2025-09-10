@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 **Other Datasets**: **TVSum** and **SumMe** for direct comparison with stateof-the-art (SOTA) methods. TVSum dataset comprises 50 videos, each typically ranging from 1 to 5 minutes in
 duration. The dataset includes various genres, such as news and documentary. SumMe dataset consists of 25 videos, with durations ranging from 1 to 6 minutes. 
-> **Note:** Access to the TV2 dataset may be restricted. TVSum and SumMe are public; please follow their licenses and download instructions.
+> **Note:** Access to the newsroom dataset may be restricted. TVSum and SumMe are public; please follow their licenses and download instructions.
 
 
 ## How to Train
