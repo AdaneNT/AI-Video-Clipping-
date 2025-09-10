@@ -60,6 +60,7 @@ python test.py --video_path /path/to/video --d_min 2 --d_sec 30 --start_time  50
 The codebase is based upon the following repositories:
 - [Adversarial Video Summary](https://github.com/j-min/Adversarial_Video_Summary).
 - [AC-SUM-GAN](https://github.com/e-apostolidis/AC-SUM-GAN)
+- [SUM-GAN-AED](https://github.com/Aria-Minaidi/Self-Attention-based-GANs-for-Video-Summarization/tree/main)
 
 We cast our video clipping problem as an extractive video summarization task on top of the existing methods, which have been extended and modified to include additional learning techniques such as Bayesian Variational Autoencoders, transformers, and novel contrastive loss for enhanced clipping and maintaining spatial-temporal continuity across shots.
 
