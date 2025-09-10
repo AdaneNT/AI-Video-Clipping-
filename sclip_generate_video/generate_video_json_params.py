@@ -90,14 +90,13 @@ def generate_video(score_path, metadata_path, video_path, d_min,d_sec, start_tim
                 ]
             }
 
-            # Iterate over each shot in shot_bound and add to EDL if it overlaps with non-zero summary frames
             for shot in shot_bound:
                 shot_start, shot_end = shot[0], shot[1]
 
                 # Check if the shot is included in the summary
                 if np.any((frame_numbers >= shot_start) & (frame_numbers <= shot_end)):
                     
-                    # Find the first frame in summary that is included for this shot
+                    # Get the first frame in summary that is included for this shot
                     start_frame = np.argwhere(summary[shot_start:shot_end + 1] == 1)[0][0] + shot_start
                     start_time = start_frame / fps  # Convert to seconds
 
