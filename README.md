@@ -74,7 +74,7 @@ If you use this repository, please cite our ICTAI 2025 paper:
   url          = {<paper or arXiv link>},
   doi          = {<DOI if available>}
 }
-
+```
 ## References
 1. **Unsupervised Video Summarization with Adversarial LSTM Networks**  
    Behrooz Mahasseni, Michael Lam, and Sinisa Todorovic.  
