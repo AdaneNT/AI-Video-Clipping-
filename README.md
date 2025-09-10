@@ -27,11 +27,15 @@ duration. The dataset includes various genres, such as news and documentary. Sum
 python train.py  /path/to/dataset
  ```
 ## How to Test (Generate Clip)
-Generate a clip (short version of the orginal footage) using graphical user Interface (GUI). The GUI allows the user to choose a clip type (LYD, KORTLOT,LOT, and LANGLOT) to determine the length of the clip. An Edit Decision List (EDL) can also be automatically generated for each selected clip type.
-- **LYD**: 10-40 sek      
-- **KORTLOT**: 40 sek - 1 min 30 sek
-- **LOT**: 1 min 15 sek - 2 min 45 sek
-- **LANGLOT**: 2 min 30 sek - 4 min 45 sek
+Generate a clip (a short version of the original footage) using the graphical user interface (GUI). The GUI lets you choose a clip type—`LYD`, `KORTLOT`, `LOT`, or `LANGLOT`—to determine the clip length. An Edit Decision List (EDL) can also be generated automatically for each selected clip type.
+
+- **LYD (shortest)**: 00:10–00:39  
+- **KORTLOT (short)**: 00:40–01:14  
+- **LOT (medium)**: 01:15–02:29  
+- **LANGLOT (long)**: 02:30–04:45- **LYD (shortest clip)**: 10-40 seconds      
+- **KORTLOT (shorter)**: 40 seconds - 1 min 30 seconds
+- **LOT (Medium)**: 1 min 15 seconds - 2 min 45 seconds
+- **LANGLOT (Long version)**: 2 min 30 sek - 4 min 45 seconds
 
 ### Using Swagger UI:
 1. Launch the API by running the following command:
