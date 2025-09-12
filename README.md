@@ -1,6 +1,6 @@
 ## Video News Clip Generation/ Summarization
 
-This repository provides a framework for video news clipping and generating summarized content along with edit decision lists (EDLs). It involves advanced deep learning models, including Generative models, multi-head attention mechanisms, and contrastive learning methods, integrated with robust feature extraction components. The framework is designed to generate coherent, high-quality clips/summaries while preserving spatial-temporal continuity across video segments.
+This repository provides a framework for video news clipping and generating summarized content along with edit decision lists (EDLs). It involves advanced deep learning models, including generative adversarial networks(GAN), multi-head attention mechanisms, and contrastive learning methods, integrated with robust feature extraction components. The framework is designed to generate coherent, high-quality clips/summaries while preserving spatial-temporal continuity across video segments.
 ## Table of Contents
 - [Requirements](#requirements)
 - [Dataset](#dataset)
