@@ -56,7 +56,7 @@ python test.py --video_path /path/to/video --d_min 2 --d_sec 30 --start_time  50
 - --frames <int>:  Number of frames (optional, default: 0 )
 
 ## Acknowledgements
-The codebase is based upon the following repositories:
+Below are the papers we referenced and the repositories the codebase is based upon:
 - [Adversarial Video Summary](https://github.com/j-min/Adversarial_Video_Summary).
 - [AC-SUM-GAN](https://github.com/e-apostolidis/AC-SUM-GAN)/[AC-SUM-GAN](https://github.com/hnminh/AC_SUM_GAN)
 - [SUM-GAN-AED](https://github.com/Aria-Minaidi/Self-Attention-based-GANs-for-Video-Summarization/tree/main)
