@@ -23,7 +23,7 @@ duration. The dataset includes various genres, such as news and documentary. Sum
 
 
 ## How to Train
- We train the model using 5 splits of the dataset. You can train the model by running the following command:
+ We train the model using 5 splits of the dataset, by running the following command:
 
 ```bash
 python train.py  /path/to/dataset
