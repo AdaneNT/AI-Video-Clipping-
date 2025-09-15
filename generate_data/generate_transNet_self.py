@@ -16,24 +16,46 @@ from decord import VideoReader
 class SelfAttention(nn.Module):
     def __init__(self, embed_size):
         super(SelfAttention, self).__init__()
-        self.query = nn.Linear(embed_size, embed_size)
-        self.key = nn.Linear(embed_size, embed_size)
-        self.value = nn.Linear(embed_size, embed_size)
+        self.embed_size = embed_size  # D
+        self.Wq = nn.Linear(embed_size, embed_size, bias=True)
+        self.Wk = nn.Linear(embed_size, embed_size, bias=True)
+        self.Wv = nn.Linear(embed_size, embed_size, bias=True)
         self.softmax = nn.Softmax(dim=-1)
 
+        self.last_attention = None
+
     def forward(self, x):
-        # Compute queries, keys, and values
-        Q = self.query(x)
-        K = self.key(x)
-        V = self.value(x)
+        """
+        x: (B, D) or (B, 1, D) or (D,)
+        returns: attended features with same shape as input (feature-weighted)
+        """
+        if x.dim() == 1:
+            x_in = x.unsqueeze(0)  # (1, D)
+        elif x.dim() == 3 and x.size(-2) == 1:
+            x_in = x.squeeze(-2)   # (B, D)
+        elif x.dim() == 2:
+            x_in = x               # (B, D)
+        else:
+            raise ValueError(f"SelfAttention expects (D,), (B,D) or (B,1,D); got {tuple(x.shape)}")
 
-        # Calculate attention scores
-        scores = torch.matmul(Q, K.transpose(-2, -1)) / np.sqrt(Q.shape[-1])
-        attention_weights = self.softmax(scores)
+        Q = self.Wq(x_in)  # (B, D)
+        K = self.Wk(x_in)  # (B, D)
+        V = self.Wv(x_in)  # (B, D)
 
-        # Weighted sum of values
-        attended = torch.matmul(attention_weights, V)
-        return attended
+        scores = Q.unsqueeze(-1) * K.unsqueeze(-2)  # (B, D, D)
+        scores = scores / math.sqrt(Q.size(-1))
+
+        A = self.softmax(scores)  # (B, D, D)
+        self.last_attention = A   
+
+        attended = torch.matmul(A, V.unsqueeze(-1)).squeeze(-1)  # (B, D)
+
+        if x.dim() == 1:
+            return attended.squeeze(0)          # (D,)
+        elif x.dim() == 3 and x.size(-2) == 1:
+            return attended.unsqueeze(-2)       # (B,1,D)
+        else:
+            return attended  
 
 class GenerateDataset:
     def __init__(self, video_path, save_path, embed_size=2048):
