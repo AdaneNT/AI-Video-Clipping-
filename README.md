@@ -17,8 +17,6 @@ pip install -r requirements.txt
 ## Datasets
 **Newsroom dataset**:The primary dataset used for training the models consists of a collection of news videos (commonly named as POWERs or raw footage) from the news collection. The files are preprocessed and structured in h5py format, containing video features, segmentations, and other relevant information. These files are stored in the `data` folder and include essential information for video clipping and summary generation. 
 
-Other publicly availabel  datasets have also been used for direct comparison with stateof-the-ar methods. 
-
 
 ## How to Train
  We train the model using 5 splits of the dataset, by running the following command:
