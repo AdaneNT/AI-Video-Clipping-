@@ -14,7 +14,7 @@ This repository provides a framework for video news clipping and generating summ
 pip install -r requirements.txt
  ```  
 
-## Datasets
+## Dataset
 **Newsroom dataset**:The primary dataset used for training the models consists of a collection of news videos (commonly named as POWERs or raw footage) from the news collection. The files are preprocessed and structured in h5py format, containing video features, segmentations, and other relevant information. These files are stored in the `data` folder and include essential information for video clipping and summary generation. 
 
 
