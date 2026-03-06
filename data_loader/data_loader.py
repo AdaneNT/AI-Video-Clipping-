@@ -9,12 +9,12 @@ class VideoData(Dataset):
     def __init__(self, name, mode, split_index):
         self.mode = mode
         self.name = name # 'tvsum' or 'summe'
-        self.datasets = ['input_dataset/SumMe/eccv16_dataset_summe_google_pool5.h5',
+        self.datasets = ['input_dataset/TV2/eccv16_dataset_TV2_ResNet.h5',
                          'input_dataset/TVSum/eccv16_dataset_tvsum_google_pool5.h5']
         self.splits_filename = ['input_dataset/splits/' + self.name + '_splits.json']
         self.split_index = split_index # current split (varies from 0 to 4)
 
-        if name == 'summe':
+        if name == 'TV2':
             self.filename = self.datasets[0]
         elif name == 'tvsum':
             self.filename = self.datasets[1]
